@@ -61,13 +61,13 @@ export default function AddEvent() {
                 value={eventName}
                 onChange={(e) => setEventName(e.target.value)}
                 placeholder="اسم المناسبة"
-                className="border border-gray-400 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition"
+                className="border w-full border-gray-400 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition"
               />
             </div>
 
             {/* Date Picker */}
             <div className="flex flex-col gap-2">
-              <div className="relative">
+              <div className="relative w-full">
                 <input
                   type="date"
                   value={eventDate}
@@ -81,19 +81,19 @@ export default function AddEvent() {
             </div>
 
             {/* Time Input */}
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <input
                 type="time"
                 value={eventTime}
                 onChange={(e) => setEventTime(e.target.value)}
                 placeholder="الساعة"
-                className="border border-gray-300 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition cursor-pointer"
+                className="border w-full border-gray-300 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition cursor-pointer"
               />
             </div>
 
             {/* Priest Select */}
-            <div className="flex flex-col gap-2">
-              <div className="relative">
+            <div className="flex flex-col gap-2 w-full">
+              <div className="relative w-full">
                 <select
                   value={priest}
                   onChange={(e) => setPriest(e.target.value)}
@@ -113,8 +113,8 @@ export default function AddEvent() {
             </div>
 
             {/* Altar Select */}
-            <div className="flex flex-col gap-2">
-              <div className="relative">
+            <div className="flex flex-col gap-2 w-full">
+              <div className="relative w-full">
                 <select
                   value={altar}
                   onChange={(e) => setAltar(e.target.value)}

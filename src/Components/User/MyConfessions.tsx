@@ -246,7 +246,7 @@ export default function MyConfessions() {
   }
 
   return (
-    <div className="w-full px-8 sm:px-6 lg:px-16 py-14">
+    <div className="w-full px-2 sm:px-6 lg:px-32 py-14">
       <style>{`
         .swiper-button-next,
         .swiper-button-prev {

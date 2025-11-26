@@ -11,10 +11,9 @@ const AuthLayout = () => {
   return (
     <div className="min-h-screen w-full bg-[#222] flex flex-col lg:flex-row">
       <div
-        className="relative flex-1 flex items-center justify-center min-h-[60vh] lg:min-h-screen bg-contain bg-center"
+        className="relative flex-1 flex items-center justify-center min-h-[60vh] lg:min-h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${isFatherLogin ? fathersBackground : leftBg})`,
-          backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
