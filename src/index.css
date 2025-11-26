@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+* {
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+}
+
+.font-noto-arabic {
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+}
+
+::-webkit-input-placeholder { color: #909090; opacity: 1; }
+::-moz-placeholder { color: #909090; opacity: 1; }
+:-ms-input-placeholder { color: #909090; opacity: 1; }
+:-moz-placeholder { color: #909090; opacity: 1; }
+::placeholder { color: #909090; opacity: 1; }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8' d='M6 8l4 4 4-4'/></svg>");
+  padding-right: 2rem; 
+}
+
+:not(.rtl) select {
+  background-position: left 0.75rem center;
+  padding-left: 2rem;
+  padding-right: 0.75rem;
+}
+
+select.sm {
+  background-size: 0.85rem;
+  padding-right: 1.5rem;
+}
