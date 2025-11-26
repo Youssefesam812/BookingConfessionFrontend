@@ -7,6 +7,8 @@ const navLinks = [
   { label: "مواعيد القداسات", href: "/mass-time" },
   { label: "اعترافي", href: "/my-confessions" },
   { label: "حجز اعترافات", href: "/" },
+  { label: "login", href: "/login" },
+
 ];
 
 export default function Header() {

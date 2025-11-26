@@ -20,36 +20,10 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <AuthLayout />,
-      children: [
-        {
-          path: "/",
-          element: <Login />,
-        },
-        {
-          path: "father-login",
-          element: <FatherLogin />,
-        },
-        {
-          path: "register",
-          element: <Register />,
-        },
-        {
-          path: "forgot-password",
-          element: <ForgetPassword />,
-        },
-        {
-          path: "*",
-          element: <div>404 - Page Not Found</div>,
-        },
-      ],
-    },
-    {
-      path: "/",
       element: <UserLayout />,
       children: [
         {
-          path: "/booking-confessions",
+          path: "/",
           element: <BookingConfessions />,
         },
         {
@@ -70,7 +44,32 @@ function App() {
         },
       ],
     },
-    
+    {
+      path: "/",
+      element: <AuthLayout />,
+      children: [
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "father-login",
+          element: <FatherLogin />,
+        },
+        {
+          path: "register",
+          element: <Register />,
+        },
+        {
+          path: "forgot-password",
+          element: <ForgetPassword />,
+        },
+        {
+          path: "*",
+          element: <div>404 - Page Not Found</div>,
+        },
+      ],
+    },
     {
       path: "/dashboard",
       element: <DashboardLayout />,
