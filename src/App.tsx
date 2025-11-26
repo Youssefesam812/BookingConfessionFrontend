@@ -20,36 +20,10 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <UserLayout />,
-      children: [
-        {
-          path: "/",
-          element: <BookingConfessions />,
-        },
-        {
-          path: "/father-booking-confessions/:priestId",
-          element: <FatherBookingConfessions />,
-        },
-        {
-          path: "/my-confessions",
-          element: <MyConfessions />,
-        },
-        {
-          path: "/mass-time",
-          element: <MassTime />,
-        },
-        {
-          path: "/profile",
-          element: <Profile />,
-        },
-      ],
-    },
-    {
-      path: "/",
       element: <AuthLayout />,
       children: [
         {
-          path: "login",
+          path: "/",
           element: <Login />,
         },
         {
@@ -67,6 +41,32 @@ function App() {
         {
           path: "*",
           element: <div>404 - Page Not Found</div>,
+        },
+      ],
+    },
+    {
+      path: "/",
+      element: <UserLayout />,
+      children: [
+        {
+          path: "/booking-confessions",
+          element: <BookingConfessions />,
+        },
+        {
+          path: "/father-booking-confessions/:priestId",
+          element: <FatherBookingConfessions />,
+        },
+        {
+          path: "/my-confessions",
+          element: <MyConfessions />,
+        },
+        {
+          path: "/mass-time",
+          element: <MassTime />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
         },
       ],
     },

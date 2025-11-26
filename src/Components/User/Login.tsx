@@ -40,7 +40,7 @@ export default function Login() {
           role: "member",
         };
         setAuth(mockToken, mockUser);
-        navigate("/");
+        navigate("/booking-confessions");
       } catch (err: any) {
         setError("حدث خطأ أثناء تسجيل الدخول");
       }
