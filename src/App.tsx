@@ -7,6 +7,7 @@ import Register from "./Components/User/Register";
 import Login from "./Components/User/Login";
 import FatherLogin from "./Components/User/FatherLogin";
 import ForgetPassword from "./Components/User/ForgetPassword";
+import BookingConfessions from "./Components/User/BookingConfessions";
 import FatherBookingConfessions from "./Components/User/FatherBookingConfessions";
 import ConfessionsPage from "./Components/Dashboard/ConfessionsPage";
 import MassTime from "./Components/User/MassTime";
@@ -17,32 +18,6 @@ import AddEvent from "./Components/Dashboard/AddEvent";
 
 function App() {
   const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <UserLayout />,
-      children: [
-        {
-          path: "/",
-          element: <Login />,
-        },
-        {
-          path: "/father-booking-confessions/:priestId",
-          element: <FatherBookingConfessions />,
-        },
-        {
-          path: "/my-confessions",
-          element: <MyConfessions />,
-        },
-        {
-          path: "/mass-time",
-          element: <MassTime />,
-        },
-        {
-          path: "/profile",
-          element: <Profile />,
-        },
-      ],
-    },
     {
       path: "/",
       element: <AuthLayout />,
@@ -70,10 +45,36 @@ function App() {
       ],
     },
     {
+      path: "/",
+      element: <UserLayout />,
+      children: [
+        {
+          path: "/",
+          element: <BookingConfessions />,
+        },
+        {
+          path: "/father-booking-confessions/:priestId",
+          element: <FatherBookingConfessions />,
+        },
+        {
+          path: "/my-confessions",
+          element: <MyConfessions />,
+        },
+        {
+          path: "/mass-time",
+          element: <MassTime />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+      ],
+    },
+    {
       path: "/dashboard",
       element: <DashboardLayout />,
       children: [
-       {
+        {
           index: true,
           element: <ConfessionsPage />,
         },
