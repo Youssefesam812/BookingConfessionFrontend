@@ -72,9 +72,13 @@ export default function AddEvent() {
                   type="date"
                   value={eventDate}
                   onChange={(e) => setEventDate(e.target.value)}
-                  className="w-full border border-gray-400 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition cursor-pointer"
+                  className="w-full border border-gray-400 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition cursor-pointer appearance-none"
                   style={{
                     colorScheme: "light",
+                    WebkitAppearance: "none",
+                    appearance: "none",
+                    height: "48px",
+                    lineHeight: "1.25rem",
                   }}
                 />
               </div>
@@ -87,7 +91,13 @@ export default function AddEvent() {
                 value={eventTime}
                 onChange={(e) => setEventTime(e.target.value)}
                 placeholder="الساعة"
-                className="border w-full border-gray-300 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition cursor-pointer"
+                className="border w-full border-gray-300 rounded-lg px-4 py-3 text-right focus:outline-none focus:border-[#195E8B] transition cursor-pointer appearance-none"
+                style={{
+                  WebkitAppearance: "none",
+                  appearance: "none",
+                  height: "48px",
+                  lineHeight: "1.25rem",
+                }}
               />
             </div>
 
