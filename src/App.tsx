@@ -20,32 +20,6 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <UserLayout />,
-      children: [
-        {
-          path: "/booking-confessions",
-          element: <BookingConfessions />,
-        },
-        {
-          path: "/father-booking-confessions/:priestId",
-          element: <FatherBookingConfessions />,
-        },
-        {
-          path: "/my-confessions",
-          element: <MyConfessions />,
-        },
-        {
-          path: "/mass-time",
-          element: <MassTime />,
-        },
-        {
-          path: "/profile",
-          element: <Profile />,
-        },
-      ],
-    },
-    {
-      path: "/",
       element: <AuthLayout />,
       children: [
         {
@@ -70,6 +44,33 @@ function App() {
         },
       ],
     },
+    {
+      path: "/",
+      element: <UserLayout />,
+      children: [
+        {
+          path: "/booking-confessions",
+          element: <BookingConfessions />,
+        },
+        {
+          path: "/father-booking-confessions/:priestId",
+          element: <FatherBookingConfessions />,
+        },
+        {
+          path: "/my-confessions",
+          element: <MyConfessions />,
+        },
+        {
+          path: "/mass-time",
+          element: <MassTime />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+      ],
+    },
+    
     {
       path: "/dashboard",
       element: <DashboardLayout />,
