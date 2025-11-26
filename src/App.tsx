@@ -7,7 +7,6 @@ import Register from "./Components/User/Register";
 import Login from "./Components/User/Login";
 import FatherLogin from "./Components/User/FatherLogin";
 import ForgetPassword from "./Components/User/ForgetPassword";
-import BookingConfessions from "./Components/User/BookingConfessions";
 import FatherBookingConfessions from "./Components/User/FatherBookingConfessions";
 import ConfessionsPage from "./Components/Dashboard/ConfessionsPage";
 import MassTime from "./Components/User/MassTime";
@@ -24,7 +23,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <BookingConfessions />,
+          element: <Login />,
         },
         {
           path: "/father-booking-confessions/:priestId",
