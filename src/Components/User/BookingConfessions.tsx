@@ -1,6 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
-
+import priest1 from "../../assets/priests/1.jpg";
+import priest2 from "../../assets/priests/2.jpg";
+import priest3 from "../../assets/priests/3.jpg";  
+import priest4 from "../../assets/priests/4.jpg";
+import priest5 from "../../assets/priests/5.jpg";
+import priest6 from "../../assets/priests/6.jpg";
+import priest7 from "../../assets/priests/7.jpg";
+import priest8 from "../../assets/priests/8.jpg";
+import priest9 from "../../assets/priests/9.jpg";
 type Priest = {
   id: string;
   fullName: string;
@@ -16,9 +24,15 @@ export default function BookingConfessions() {
   useEffect(() => {
     setLoading(true);
     const MOCK_PRIESTS: Priest[] = [
-      { id: "p1", fullName: "القس يوسف", profileImageUrl: null },
-      { id: "p2", fullName: "الأب سمير", profileImageUrl: null },
-      { id: "p3", fullName: "القس بولا", profileImageUrl: null },
+      { id: "p1", fullName: "ابونا سوريال", profileImageUrl: priest2 },
+      { id: "p2", fullName: "ابونا صليب", profileImageUrl: priest1 },
+      { id: "p3", fullName: "ابونا ميرون", profileImageUrl: priest3 },
+      { id: "p4", fullName: "ابونا موسي", profileImageUrl: priest4 },
+      { id: "p5", fullName: "ابونا بيشوي", profileImageUrl: priest5 },
+      { id: "p7", fullName: "ابونا يوحنا", profileImageUrl: priest7 },
+      { id: "p6", fullName: "ابونا ايليا", profileImageUrl: priest6 },
+      { id: "p9", fullName: "ابونا بولا", profileImageUrl: priest9 },
+      { id: "p8", fullName: "ابونا ارساني", profileImageUrl: priest8 },
     ];
     setTimeout(() => {
       setPriests(MOCK_PRIESTS);

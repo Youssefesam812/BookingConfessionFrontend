@@ -63,9 +63,9 @@ function SlotCard({ time, date }: { time: string; date: string }) {
         alt="صورة أبونا"
         className="w-20 h-20 rounded-full object-cover mb-1"
       />
-      <p className="font-semibold text-[18px] text-[#1D3557]">أبونا عيد عبيد</p>
+      <p className="font-semibold text-[18px] text-[#1D3557]">أبونا موسي فتحي</p>
       <p className="text-[14px] text-gray-400">01001637670</p>
-      <p className="text-[14px] text-gray-400">مارجرجس شيراتون المطار</p>
+      <p className="text-[14px] text-gray-400">مارجرجس منشية التحرير</p>
       <p className="text-[14px] text-gray-400">{date}</p>
     </div>
   );
